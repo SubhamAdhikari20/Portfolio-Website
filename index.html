@@ -3,76 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subham Adhikari</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Subham Adhikari | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="shortcut icon" href="images/programmer.ico" type="image/x-icon">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
+
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="left">
+                <img src="images/profile_img.jpeg" alt="My Profile">
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-bars"></i>
+                </ul>
+            </div>
+
+            <!-- <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i> 
+                <i class="fa-solid fa-xmark"></i>
+            </div> -->
+            
         </nav>
     </header>
     
-    <section id="home" class="section">
-        <div class="intro">
-            <h1>Hello, I am Subham Adhikari</h1>
-            <p>I'm a full stack web developer.</p>
-            <a href="#about" class="btn">Learn More</a>
-        </div>
-    </section>
-    
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dui vel tortor vehicula auctor.</p>
-    </section>
-    
-    <section id="projects" class="section">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <img src="project1.jpg" alt="Project 1">
-                <div class="project-info">
-                    <h3>Project 1</h3>
-                    <p>Project description goes here.</p>
+    <main>
+        <section id="home" class="section">
+            <div class="left-intro">
+                Hello, I am <span class="purple">Subham Adhikari</span>
+
+                <p style="display: inline-block;">I'm a passionate</p>  
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <a href="#about"><button class="btn">Explore</button></a>
+
+                    <a href="#about"><button class="btn">Download Resume</button></a>
+
+                </div>
+
+            </div>
+
+            <div class="right-intro">
+                <img src="images/developer.png" alt="DEveloper">
+            </div>
+
+
+        </section>
+        
+        
+        <section id="about" class="section">
+            <span class="text-gray">About me</span>
+            <h1 class="section-headings">Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="img-top" src="images/python-developer.png" alt="">
+                    <div class="vertical-title">
+                        Python Developer 
+                    </div>
+
+                    <div class="date">(Dec, 2022 - March, 2024)</div>
+
+                    <div class="vertical-text">
+                        I developed my expertise in Python through dedicated home study and academic projects. I worked on a variety of programming challenges, including creating efficient algorithms, automating tasks, and building data-driven applications. My projects included developing desktop applications, implementing APIs, and working with libraries like Pandas, NumPy, and Matplotlib. This experience allowed me to deepen my understanding of Python's versatility, enhance my coding practices, and solve real-world problems effectively.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="img-top" src="images/coding.png" alt="">
+                    <div class="vertical-title">
+                        Web Developer
+                    </div>
+
+                    <div class="date"> (May, 2022 - Oct, 2023)</div>
+
+                    <div class="vertical-text">
+                        As a Web Developer, I focused on creating user-friendly and responsive websites during my self-study period. I built several projects utilizing HTML, CSS, JavaScript, and frameworks like Bootstrap and React. These projects helped me understand the importance of UI/UX design, web optimization, and client-server communication. I also gained hands-on experience with version control systems like Git, ensuring collaborative and structured development. This role honed my ability to design scalable and functional web applications.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="img-top" src="images/java.png" alt="">
+                    <div class="vertical-title">
+                        Java Developer
+                    </div>
+                    
+                    <div class="date"> (April, 2024 - Aug, 2024)</div>
+
+                    <div class="vertical-text">
+                        My journey as a Java Developer involved leveraging object-oriented programming to create innovative solutions. Through home study and college projects, I worked on building robust applications using the Java ecosystem. I gained experience in implementing the MVC architecture, using Java Swing for GUI development, and optimizing code for better performance. These projects enhanced my understanding of core Java concepts like multithreading, exception handling, and database integration, preparing me to tackle complex development challenges.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="img-top" src="images/andriod-developer.png" alt="">
+                    <div class="vertical-title">
+                        Andriod Developer
+                    </div>
+
+                    <div class="date">(Oct, 2024 - ??)</div>
+
+                    <div class="vertical-text">
+                        Currently, I am expanding my skillset as an Android Developer through home study and college projects. My focus is on developing intuitive and feature-rich mobile applications using Kotlin and Java. I am exploring areas like user interface design, mobile app lifecycle management, and integration with backend APIs. Working on these projects has allowed me to experiment with new ideas and implement solutions tailored to real-world mobile users, further strengthening my expertise in Android development.
+                    </div>
                 </div>
             </div>
-            <div class="project">
-                <img src="project2.jpg" alt="Project 2">
-                <div class="project-info">
-                    <h3>Project 2</h3>
-                    <p>Project description goes here.</p>
+        </section>
+        
+
+        
+        <section id="skills" class="section">
+            <span class="text-gray">Skills</span>
+            <h1 class="section-headings">My Strengths</h1>
+
+            <div class="skill-grid section-grid">
+                <div class="skill-grid-box section-grid-box">
+                    <img src="images/python.png" alt="Project 1">
+                    <div class="skill-info section-info">
+                        <span>Python Developement | Tkinter</span>
+                    </div>    
+                </div>
+                
+                <div class="skill-grid-box section-grid-box"> 
+                    <img src="images/web_development.jpg" alt="Project 2">
+                    <div class="skill-info section-info">
+                        <span>Web Developement | React/Next JS</span>
+                    </div>
+                </div>
+                <div class="skill-grid-box section-grid-box">
+                    <img src="images/android.png" alt="Project 3">
+                    <div class="skill-info section-info">
+                        <p>Android Developement | Android Studio</p>
+                    </div>
+                </div>
+
+                <div class="skill-grid-box section-grid-box">
+                    <img src="images/java2.png" alt="Project 3">
+                    <div class="skill-info section-info">
+                        <p>Java Developement | Swing</p>
+                    </div>
+                </div>
+
+                <div class="skill-grid-box section-grid-box">
+                    <img src="images/graphics_designer.png" alt="Project 4">
+                    <div class="skill-info section-info">
+                        <p>Graphics Designing | Figma/Balsamiq</p>
+                    </div>
+                </div>
+
+                <div class="skill-grid-box section-grid-box">
+                    <img src="images/c++.png" alt="Project 5" class="img-c">
+
+                    <div class="skill-info section-info">
+                        <p>C++ | DSA</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+
+        
+        <section id="projects" class="section">
+            <span class="text-gray">Projects</span>
+            <h1 class="section-headings">My Projects</h1>
+
+            <div class="project-grid section-grid">
+                <div class="project-grid-box section-grid-box">
+                    
+                    <img src="images/project1.png" alt="Project 1">
+
+                    <div class="project-info section-info">
+                        <span>Travel Booking System</span>
+                    </div> 
+
+                    <div class="icons">
+                        <a href="https://github.com/SubhamAdhikari20/Travel-Management-System" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://youtu.be/tXtrJoqGFzk" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                    
+                        
+                        
+                              
+                </div>
+                
+                <div class="project-grid-box section-grid-box"> 
+                    <img src="images/project2.png" alt="Project 2">
+                    <div class="project-info section-info">
+                        <span>Store Management System</span>
+                    </div>
+                    
+                    <div class="icons">
+                        <a href="https://github.com/SubhamAdhikari20/Store-Management-System" target="_blank"">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                            
+                        <a href="https://youtu.be/2D_Kodndmv0" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+                    
+                    
+                </div>
+                <div class="project-grid-box section-grid-box">
+                    <img src="project3.jpg" alt="Project 3">
+                    <div class="project-info section-info">
+                        <span>FitSense-Fitness Website</span>
+                    </div>
                 </div>
             </div>
-            <!-- Add more projects as needed -->
-        </div>
-    </section>
+        </section>
     
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+
+        
+        <section id="contact" class="section">
             
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </section>
+            <span class="text-gray">Contact</span>
+            <h1 class="section-headings">Message me !</h1>
+
+            <form
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+
+
+            <div class="icons">
+                <a href="https://www.instagram.com/subham_adhikari_007" target="_blank"">                   
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/subham-adhikari-2004s05a18" target="_blank"">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+
+                <a href="https://github.com/SubhamAdhikari20" target="_blank"">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                    
+                <a href="https://www.youtube.com/@subhamadhikari1484" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    
     
     <footer>
+        <div class="footer-flex-box">
+            <div class="footer-item1">
+                <h3>Subham's Portfolio</h3>
+            </div>
+
+            <div class="footer-item2">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item3">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item4">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+
+
+        </div>
+        
         <p>&copy; 2024 Subham Adhikari. All rights reserved.</p>
     </footer>
     
+    <a href="#" class="go-up-btn"><i class="fa-solid fa-arrow-up"></i></a>
+
+    
     <script src="scripts.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ["Web Developer", "Android Developer", "Python Developer", "Java Developer", "Graphics Designer"],
+          typeSpeed: 50,
+        });
+    </script>
+
 </body>
 </html>
